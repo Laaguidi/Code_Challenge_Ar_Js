@@ -9,11 +9,12 @@
 //return the message
 
 function findNeedle(arr){
-    for(let i = 0; i < arr.length; i++){
-        if(arr[i] == "needle"){
-            return "found the needle at position " + i;
-        }
-    }
+    // for(let i = 0; i < arr.length; i++){
+    //     if(arr[i] == "needle"){
+    //         return "found the needle at position " + i;
+    //     }
+    // }
+    return "found the needle at position " + arr.indexOf("needle");
     
 }
 
