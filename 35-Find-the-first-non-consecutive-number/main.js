@@ -18,6 +18,7 @@
 // Return Null if all the Number are consectutive
 function firstNonConsecutive(arr) {
     for (let i = 1; i < arr.length; i++) {
+        // current element index is not equal to the previous element arr[i - 1]:
       if (arr[i] - 1 !== arr[i - 1]) return arr[i];
     }
     return null;
