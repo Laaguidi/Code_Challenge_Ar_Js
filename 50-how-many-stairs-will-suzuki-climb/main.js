@@ -63,9 +63,11 @@ function stairsIn20(s) {
     // return s.reduce((arr, day) => arr.concat(day)).reduce((acc, currentValue) => acc + currentValue) * 20;
 
     // Another Solution
+    // Concatenate all individual step values into the resultArr array
     for(let i = 0; i < s.length; i++){
         resultArr.push(...s[i]);
     }
+    // Sum up all values in the resultArr array
     for(let j = 0; j < resultArr.length; j++){
         finalResult += resultArr[j];
     }
